@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whisker and Vi</title>
+
+    <title>Whisker and Vi | Home</title>
 
     <style>
-        .owner-image {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-}
+
         body {
             max-width: 1000px;
             margin: 0 auto;
@@ -22,12 +19,38 @@
             color: #3d3028;
         }
 
+        header {
+            margin-bottom: 40px;
+        }
+
         h1 {
             margin-bottom: 10px;
             font-size: 42px;
         }
 
-        body > p {
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3d3028;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main > p {
             font-size: 18px;
             margin-bottom: 35px;
             line-height: 1.6;
@@ -40,20 +63,6 @@
         section h2 {
             font-size: 28px;
             margin-bottom: 15px;
-        }
-
-        section p {
-            max-width: 700px;
-            margin: 0 auto 20px;
-            line-height: 1.6;
-        }
-
-        section img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin-top: 10px;
         }
 
         article {
@@ -87,72 +96,115 @@
             border-radius: 14px;
             margin-top: 12px;
         }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <h1>Whisker and Vi</h1>
+    <header>
 
-    <p>
-        Cat-inspired food, treats, grooming, and hygiene products made with love for every whiskered friend.
-    </p>
+        <h1>Whisker and Vi</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
 
-    <section>
-        <h2>Mhargaret Villegas</h2>
+    <main>
 
         <p>
-            Hi! I'm the owner of Whisker and Vi. I created this cat shop
-            for cat lovers and their furry companions. Our products include
-            nutritious cat food, tasty treats, and grooming and hygiene essentials.
+            Cat-inspired food, treats, grooming, and hygiene products
+            made with love for every whiskered friend.
         </p>
 
-        <img src="cat.jpg" alt="A cat representing Whisker and Vi" class="owner-image">
+
+        <section>
+
+            <h2>Vi's Products</h2>
 
 
-    <h2>Vi's Products</h2>
+            <article>
+                <h3>Vi's PurrBites</h3>
+
+                <p>₱499</p>
+
+                <p>
+                    Nutritious dry cat food made to provide cats with
+                    a tasty and satisfying meal every day.
+                </p>
+
+                <img src="purrbites.jpg"
+                     alt="A bag of Vi's PurrBites dry cat food">
+            </article>
 
 
-    <article>
-        <h3>Vi's PurrBites</h3>
-        <p>₱499</p>
-        <p>
-            Nutritious dry cat food made to provide cats with a tasty and satisfying meal every day.
-        </p>
-        <img src="purrbites.jpg" alt="A bag of Vi's PurrBites dry cat food">
-    </article>
+            <article>
+                <h3>Vi's Whislime</h3>
+
+                <p>₱89</p>
+
+                <p>
+                    Delicious wet cat food with a soft texture that
+                    makes mealtime extra enjoyable for cats.
+                </p>
+
+                <img src="whislime.jpg"
+                     alt="A can of Vi's Whislime wet cat food">
+            </article>
 
 
-    <article>
-        <h3>Vi's Whislime</h3>
-        <p>₱89</p>
-        <p>
-            Delicious wet cat food with a soft texture that makes mealtime extra enjoyable for cats.
-        </p>
-        <img src="whislime.jpg" alt="A can of Vi's Whislime wet cat food">
-    </article>
+            <article>
+                <h3>Vi's PurrTreats</h3>
+
+                <p>₱149</p>
+
+                <p>
+                    Tasty cat treats made for rewarding your furry
+                    companion during playtime and training.
+                </p>
+
+                <img src="purrtreats.jpg"
+                     alt="A package of Vi's PurrTreats cat treats">
+            </article>
 
 
-    <article>
-        <h3>Vi's PurrTreats</h3>
-        <p>₱149</p>
-        <p>
-            Tasty cat treats made for rewarding your furry companion during playtime and training.
-        </p>
-        <img src="purrtreats.jpg" alt="A package of Vi's PurrTreats cat treats">
-    </article>
+            <article>
+                <h3>Vi's WhisCare</h3>
+
+                <p>₱299</p>
+
+                <p>
+                    Cat grooming and hygiene essentials designed to help
+                    keep your furry companion clean and comfortable.
+                </p>
+
+                <img src="whiscare.jpg"
+                     alt="Vi's WhisCare cat grooming and hygiene products">
+            </article>
+
+        </section>
+
+    </main>
 
 
-    <article>
-        <h3>Vi's WhisCare</h3>
-        <p>₱299</p>
-        <p>
-            Cat grooming and hygiene essentials designed to help keep your furry companion clean and comfortable.
-        </p>
-        <img src="whiscare.jpg" alt="Vi's WhisCare cat grooming and hygiene products">
-    </article>
-
+    <footer>
+        <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
