@@ -65,11 +65,60 @@
             margin-bottom: 25px;
         }
 
-        main ul {
-            list-style-position: inside;
-            padding: 0;
-            line-height: 2;
-            font-size: 17px;
+        form {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        fieldset {
+            padding: 25px;
+            border: 2px solid #3d3028;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border: 1px solid #3d3028;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #3d3028;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: 3px solid #3d3028;
         }
 
         footer {
@@ -101,17 +150,66 @@
 
     <main>
 
-        <h2>Contact Us</h2>
+        <h2>Let's Connect! 🐾</h2>
 
         <p>
-            Have questions about our products or simply want to get in touch?
-            We'd love to hear from you and your whiskered friend!
+            Have questions about our products, want to share something,
+            or simply want to get in touch? We'd love to hear from you
+            and your whiskered friend!
         </p>
 
-        <ul>
-            <li>✉ Email: whiskerandvi@gmaill.com</li>
-            <li>ⓕ Facebook: Whisker and Vi</li>
-        </ul>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Your details</legend>
+
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+
+                <label for="subject">Subject</label>
+                <select
+                    id="subject"
+                    name="subject"
+                >
+                    <option value="">Choose a subject</option>
+                    <option value="product-question">Product question</option>
+                    <option value="product-suggestion">Product suggestion</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="something-else">Something else</option>
+                </select>
+
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+
+
+                <button type="submit">Send message</button>
+
+            </fieldset>
+
+        </form>
 
     </main>
 
