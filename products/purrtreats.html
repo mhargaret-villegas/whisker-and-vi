@@ -10,111 +10,115 @@
     <style>
 
         body {
+            font-family: Arial, sans-serif;
             max-width: 1000px;
             margin: 0 auto;
             padding: 30px 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fffaf5;
-            color: #3d3028;
-        }
-
-        header {
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-size: 42px;
+            line-height: 1.6;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 25px 0;
+            text-align: center;
         }
 
         nav li {
-            display: inline-block;
+            display: inline;
             margin: 0 15px;
         }
 
         nav a {
             text-decoration: none;
-            color: #3d3028;
+            color: black;
             font-weight: bold;
-            font-size: 17px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        header {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
+        .product-container {
+            text-align: center;
         }
 
         .product-image {
             width: 400px;
             max-width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 18px;
-            margin: 30px 0;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
         }
 
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 40px;
+        .product-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
         }
 
-        section {
-            margin-bottom: 40px;
+        .order-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
         }
 
-        section h2 {
-            font-size: 28px;
+        .order-form h2 {
+            text-align: center;
+        }
+
+        .form-group {
             margin-bottom: 20px;
         }
 
-        table {
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="email"] {
             width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            border-collapse: collapse;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        th,
-        td {
-            border: 1px solid #3d3028;
-            padding: 12px;
-            text-align: left;
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
         }
 
-        th {
-            background-color: #f5e9dc;
-            width: 40%;
+        .choice-label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
 
         footer {
+            text-align: center;
             margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
         }
 
     </style>
+
 </head>
 
 <body>
 
     <header>
 
-        <h1>Vi's PurrTreats</h1>
+        <h1>Whisker and Vi</h1>
 
-        <p>Tasty rewards for your furry friend! 🐱</p>
+        <p>Happy Cats, Happy Hearts. 🐾</p>
 
         <nav>
             <ul>
@@ -129,35 +133,25 @@
 
     <main>
 
-        <section>
+        <section class="product-container">
 
-            <img
-                src="../purrtreats.jpg"
-                alt="A package of Vi's PurrTreats tasty cat treats"
-                class="product-image"
-            >
+            <h2>Vi's PurrTreats</h2>
 
-            <h2>About Vi's PurrTreats</h2>
+            <img src="../purrtreats.jpg"
+                 alt="Vi's PurrTreats cat treats"
+                 class="product-image">
 
-            <div class="description">
+            <div class="product-description">
 
                 <p>
-                    Vi's PurrTreats are delicious and tasty cat treats made
-                    especially for rewarding your furry companion. Whether
-                    during playtime, training, or simply as a special snack,
-                    these treats make every moment more enjoyable.
+                    Vi's PurrTreats are delicious treats made especially for
+                    your feline friends. Perfect as a reward, snack, or simply
+                    a little way to show your cat some extra love!
                 </p>
 
                 <p>
-                    Each bite is made to be a satisfying reward that your cat
-                    can enjoy. Vi's PurrTreats are perfect for showing your
-                    feline friend a little extra love while encouraging good
-                    behavior and creating happy bonding moments.
-                </p>
-
-                <p>
-                    Make every reward extra special with Vi's PurrTreats —
-                    because every good cat deserves a delicious treat!
+                    Tasty, fun, and made for happy purrs—because every good
+                    kitty deserves a treat! 🐱🐾
                 </p>
 
             </div>
@@ -165,43 +159,139 @@
         </section>
 
 
-        <section>
+        <section class="order-form">
 
-            <h2>Product Specifications</h2>
+            <h2>Order Enquiry Form</h2>
 
-            <table>
+            <p>
+                Interested in ordering Vi's PurrTreats?
+                Fill out the form below and we'll get back to you!
+            </p>
 
-                <tr>
-                    <th>Product Name</th>
-                    <td>Vi's PurrTreats</td>
-                </tr>
+            <form>
 
-                <tr>
-                    <th>Product Type</th>
-                    <td>Cat Treats</td>
-                </tr>
+                <div class="form-group">
 
-                <tr>
-                    <th>Flavour</th>
-                    <td>Chicken</td>
-                </tr>
+                    <label for="purrtreats-quantity">
+                        Quantity:
+                    </label>
 
-                <tr>
-                    <th>Size</th>
-                    <td>100 g</td>
-                </tr>
+                    <input
+                        type="number"
+                        id="purrtreats-quantity"
+                        name="quantity"
+                        min="1"
+                        max="20"
+                    >
 
-                <tr>
-                    <th>Colour</th>
-                    <td>Golden Brown</td>
-                </tr>
+                </div>
 
-                <tr>
-                    <th>Price</th>
-                    <td>₱149</td>
-                </tr>
 
-            </table>
+                <fieldset>
+
+                    <legend>How would you like your order delivered?</legend>
+
+                    <input
+                        type="radio"
+                        id="purrtreats-standard"
+                        name="delivery-method"
+                        value="standard"
+                    >
+
+                    <label for="purrtreats-standard" class="choice-label">
+                        Standard Delivery
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="purrtreats-express"
+                        name="delivery-method"
+                        value="express"
+                    >
+
+                    <label for="purrtreats-express" class="choice-label">
+                        Express Delivery
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="purrtreats-pickup"
+                        name="delivery-method"
+                        value="pickup"
+                    >
+
+                    <label for="purrtreats-pickup" class="choice-label">
+                        Store Pickup
+                    </label>
+
+                </fieldset>
+
+
+                <div class="form-group">
+
+                    <p><strong>Optional Extras:</strong></p>
+
+                    <input
+                        type="checkbox"
+                        id="purrtreats-gift"
+                        name="extras"
+                        value="gift-wrapping"
+                    >
+
+                    <label for="purrtreats-gift" class="choice-label">
+                        Gift Wrapping
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="purrtreats-handling"
+                        name="extras"
+                        value="express-handling"
+                    >
+
+                    <label for="purrtreats-handling" class="choice-label">
+                        Express Handling
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="purrtreats-note"
+                        name="extras"
+                        value="special-note"
+                    >
+
+                    <label for="purrtreats-note" class="choice-label">
+                        Include a Special Note
+                    </label>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="purrtreats-email">
+                        Contact Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="purrtreats-email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Send Order Enquiry
+                </button>
+
+            </form>
 
         </section>
 
@@ -209,7 +299,9 @@
 
 
     <footer>
+
         <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
+
     </footer>
 
 </body>

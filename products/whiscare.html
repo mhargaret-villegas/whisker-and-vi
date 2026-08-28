@@ -10,111 +10,115 @@
     <style>
 
         body {
+            font-family: Arial, sans-serif;
             max-width: 1000px;
             margin: 0 auto;
             padding: 30px 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fffaf5;
-            color: #3d3028;
-        }
-
-        header {
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-size: 42px;
+            line-height: 1.6;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 25px 0;
+            text-align: center;
         }
 
         nav li {
-            display: inline-block;
+            display: inline;
             margin: 0 15px;
         }
 
         nav a {
             text-decoration: none;
-            color: #3d3028;
+            color: black;
             font-weight: bold;
-            font-size: 17px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        header {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
+        .product-container {
+            text-align: center;
         }
 
         .product-image {
             width: 400px;
             max-width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 18px;
-            margin: 30px 0;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
         }
 
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 40px;
+        .product-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
         }
 
-        section {
-            margin-bottom: 40px;
+        .order-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
         }
 
-        section h2 {
-            font-size: 28px;
+        .order-form h2 {
+            text-align: center;
+        }
+
+        .form-group {
             margin-bottom: 20px;
         }
 
-        table {
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="email"] {
             width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            border-collapse: collapse;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        th,
-        td {
-            border: 1px solid #3d3028;
-            padding: 12px;
-            text-align: left;
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
         }
 
-        th {
-            background-color: #f5e9dc;
-            width: 40%;
+        .choice-label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
 
         footer {
+            text-align: center;
             margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
         }
 
     </style>
+
 </head>
 
 <body>
 
     <header>
 
-        <h1>Vi's WhisCare</h1>
+        <h1>Whisker and Vi</h1>
 
-        <p>Gentle care for a clean and happy cat! 🐱</p>
+        <p>Happy Cats, Happy Hearts. 🐾</p>
 
         <nav>
             <ul>
@@ -129,35 +133,25 @@
 
     <main>
 
-        <section>
+        <section class="product-container">
 
-            <img
-                src="../whiscare.jpg"
-                alt="Vi's WhisCare cat grooming and hygiene products"
-                class="product-image"
-            >
+            <h2>Vi's WhisCare</h2>
 
-            <h2>About Vi's WhisCare</h2>
+            <img src="../whiscare.jpg"
+                 alt="Vi's WhisCare grooming and hygiene products"
+                 class="product-image">
 
-            <div class="description">
+            <div class="product-description">
 
                 <p>
-                    Vi's WhisCare is a collection of cat grooming and hygiene
-                    essentials designed to help keep your furry companion clean,
-                    comfortable, and well cared for every day.
+                    Vi's WhisCare provides grooming and hygiene essentials
+                    designed to help keep your cat clean, comfortable, and
+                    looking their best.
                 </p>
 
                 <p>
-                    From regular grooming to maintaining everyday cleanliness,
-                    WhisCare provides simple and reliable care essentials for
-                    your cat. It helps make grooming time easier while giving
-                    your feline friend the attention and care they deserve.
-                </p>
-
-                <p>
-                    Keep your cat feeling fresh, comfortable, and loved with
-                    Vi's WhisCare — because every whiskered friend deserves
-                    a little extra care!
+                    Because every happy cat deserves to feel fresh, clean,
+                    and well cared for! 🐱✨
                 </p>
 
             </div>
@@ -165,43 +159,139 @@
         </section>
 
 
-        <section>
+        <section class="order-form">
 
-            <h2>Product Specifications</h2>
+            <h2>Order Enquiry Form</h2>
 
-            <table>
+            <p>
+                Interested in ordering Vi's WhisCare?
+                Fill out the form below and we'll get back to you!
+            </p>
 
-                <tr>
-                    <th>Product Name</th>
-                    <td>Vi's WhisCare</td>
-                </tr>
+            <form>
 
-                <tr>
-                    <th>Product Type</th>
-                    <td>Cat Grooming and Hygiene</td>
-                </tr>
+                <div class="form-group">
 
-                <tr>
-                    <th>Includes</th>
-                    <td>Grooming and Hygiene Essentials</td>
-                </tr>
+                    <label for="whiscare-quantity">
+                        Quantity:
+                    </label>
 
-                <tr>
-                    <th>Suitable For</th>
-                    <td>Daily Cat Care</td>
-                </tr>
+                    <input
+                        type="number"
+                        id="whiscare-quantity"
+                        name="quantity"
+                        min="1"
+                        max="20"
+                    >
 
-                <tr>
-                    <th>Colour</th>
-                    <td>Soft Beige</td>
-                </tr>
+                </div>
 
-                <tr>
-                    <th>Price</th>
-                    <td>₱299</td>
-                </tr>
 
-            </table>
+                <fieldset>
+
+                    <legend>How would you like your order delivered?</legend>
+
+                    <input
+                        type="radio"
+                        id="whiscare-standard"
+                        name="delivery-method"
+                        value="standard"
+                    >
+
+                    <label for="whiscare-standard" class="choice-label">
+                        Standard Delivery
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="whiscare-express"
+                        name="delivery-method"
+                        value="express"
+                    >
+
+                    <label for="whiscare-express" class="choice-label">
+                        Express Delivery
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="whiscare-pickup"
+                        name="delivery-method"
+                        value="pickup"
+                    >
+
+                    <label for="whiscare-pickup" class="choice-label">
+                        Store Pickup
+                    </label>
+
+                </fieldset>
+
+
+                <div class="form-group">
+
+                    <p><strong>Optional Extras:</strong></p>
+
+                    <input
+                        type="checkbox"
+                        id="whiscare-gift"
+                        name="extras"
+                        value="gift-wrapping"
+                    >
+
+                    <label for="whiscare-gift" class="choice-label">
+                        Gift Wrapping
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="whiscare-handling"
+                        name="extras"
+                        value="express-handling"
+                    >
+
+                    <label for="whiscare-handling" class="choice-label">
+                        Express Handling
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="whiscare-note"
+                        name="extras"
+                        value="special-note"
+                    >
+
+                    <label for="whiscare-note" class="choice-label">
+                        Include a Special Note
+                    </label>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="whiscare-email">
+                        Contact Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="whiscare-email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Send Order Enquiry
+                </button>
+
+            </form>
 
         </section>
 
@@ -209,7 +299,9 @@
 
 
     <footer>
+
         <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
+
     </footer>
 
 </body>
