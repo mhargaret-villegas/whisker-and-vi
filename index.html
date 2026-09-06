@@ -7,121 +7,7 @@
 
     <title>Whisker and Vi | Home</title>
 
-    <style>
-
-        body {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 30px 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fffaf5;
-            color: #3d3028;
-        }
-
-        header {
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-size: 42px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #3d3028;
-            font-weight: bold;
-            font-size: 17px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main > p {
-            font-size: 18px;
-            margin-bottom: 35px;
-            line-height: 1.6;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        section h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        article {
-            display: inline-block;
-            vertical-align: top;
-            width: 220px;
-            min-height: 450px;
-            margin: 15px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 18px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box;
-        }
-
-        article h3 {
-            font-size: 20px;
-            margin: 5px 0 12px;
-        }
-
-        article p {
-            font-size: 15px;
-            line-height: 1.5;
-            margin: 8px 0;
-        }
-
-        article img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 14px;
-            margin-top: 12px;
-        }
-
-        .view-details {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
-            text-decoration: none;
-            color: white;
-            background-color: #3d3028;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .view-details:hover {
-            text-decoration: none;
-            opacity: 0.8;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -129,6 +15,8 @@
     <header>
 
         <h1>Whisker and Vi</h1>
+
+        <p>Happy Cats, Happy Hearts. 🐾</p>
 
         <nav>
             <ul>
@@ -154,8 +42,7 @@
             <h2>Vi's Products</h2>
 
 
-            <!-- Vi's PurrBites -->
-            <article>
+            <article class="card">
 
                 <h3>Vi's PurrBites</h3>
 
@@ -166,20 +53,22 @@
                     a tasty and satisfying meal every day.
                 </p>
 
-                <img src="purrbites.jpg"
-                     alt="A bag of Vi's PurrBites dry cat food">
+                <img
+                    src="purrbites.jpg"
+                    alt="A bag of Vi's PurrBites dry cat food"
+                >
 
-                <br>
-
-                <a href="products/purrbites.html" class="view-details">
+                <a
+                    href="products/purrbites.html"
+                    class="view-details"
+                >
                     View Details
                 </a>
 
             </article>
 
 
-            <!-- Vi's Whislime -->
-            <article>
+            <article class="card">
 
                 <h3>Vi's Whislime</h3>
 
@@ -190,18 +79,22 @@
                     makes mealtime extra enjoyable for cats.
                 </p>
 
-                <img src="whislime.jpg"
-                     alt="A can of Vi's Whislime wet cat food">
-                <br>
+                <img
+                    src="whislime.jpg"
+                    alt="A can of Vi's Whislime wet cat food"
+                >
 
-                <a href="products/whislime.html" class="view-details">
+                <a
+                    href="products/whislime.html"
+                    class="view-details"
+                >
                     View Details
                 </a>
+
             </article>
 
 
-            <!-- Vi's PurrTreats -->
-            <article>
+            <article class="card">
 
                 <h3>Vi's PurrTreats</h3>
 
@@ -212,20 +105,22 @@
                     companion during playtime and training.
                 </p>
 
-                <img src="purrtreats.jpg"
-                     alt="A package of Vi's PurrTreats cat treats">
+                <img
+                    src="purrtreats.jpg"
+                    alt="A package of Vi's PurrTreats cat treats"
+                >
 
-                <br>
-
-                <a href="products/purrtreats.html" class="view-details">
+                <a
+                    href="products/purrtreats.html"
+                    class="view-details"
+                >
                     View Details
                 </a>
 
             </article>
 
 
-            <!-- Vi's WhisCare -->
-            <article>
+            <article class="card">
 
                 <h3>Vi's WhisCare</h3>
 
@@ -236,11 +131,15 @@
                     keep your furry companion clean and comfortable.
                 </p>
 
-                <img src="whiscare.jpg"
-                     alt="Vi's WhisCare cat grooming and hygiene products">
-                <br>
+                <img
+                    src="whiscare.jpg"
+                    alt="Vi's WhisCare cat grooming and hygiene products"
+                >
 
-                <a href="products/whiscare.html" class="view-details">
+                <a
+                    href="products/whiscare.html"
+                    class="view-details"
+                >
                     View Details
                 </a>
 
@@ -252,7 +151,11 @@
 
 
     <footer>
-        <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Whisker and Vi. All rights reserved.
+        </p>
+
     </footer>
 
 </body>

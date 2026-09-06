@@ -7,128 +7,7 @@
 
     <title>Contact | Whisker and Vi</title>
 
-    <style>
-
-        body {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 30px 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fffaf5;
-            color: #3d3028;
-        }
-
-        header {
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-size: 42px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #3d3028;
-            font-weight: bold;
-            font-size: 17px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            min-height: 350px;
-        }
-
-        main h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        main p {
-            font-size: 17px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 40px auto;
-            text-align: left;
-        }
-
-        fieldset {
-            padding: 25px;
-            border: 2px solid #3d3028;
-        }
-
-        legend {
-            font-size: 20px;
-            font-weight: bold;
-            padding: 0 10px;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            border: 1px solid #3d3028;
-        }
-
-        textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            color: #3d3028;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus,
-        button:focus {
-            outline: 3px solid #3d3028;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -136,6 +15,8 @@
     <header>
 
         <h1>Whisker and Vi</h1>
+
+        <p>Happy Cats, Happy Hearts. 🐾</p>
 
         <nav>
             <ul>
@@ -167,6 +48,7 @@
 
 
                 <label for="name">Name</label>
+
                 <input
                     type="text"
                     id="name"
@@ -176,6 +58,7 @@
 
 
                 <label for="email">Email</label>
+
                 <input
                     type="email"
                     id="email"
@@ -185,19 +68,35 @@
 
 
                 <label for="subject">Subject</label>
+
                 <select
                     id="subject"
                     name="subject"
                 >
+
                     <option value="">Choose a subject</option>
-                    <option value="product-question">Product question</option>
-                    <option value="product-suggestion">Product suggestion</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="something-else">Something else</option>
+
+                    <option value="product-question">
+                        Product question
+                    </option>
+
+                    <option value="product-suggestion">
+                        Product suggestion
+                    </option>
+
+                    <option value="feedback">
+                        Feedback
+                    </option>
+
+                    <option value="something-else">
+                        Something else
+                    </option>
+
                 </select>
 
 
                 <label for="message">Message</label>
+
                 <textarea
                     id="message"
                     name="message"
@@ -205,7 +104,9 @@
                 ></textarea>
 
 
-                <button type="submit">Send message</button>
+                <button type="submit">
+                    Send message
+                </button>
 
             </fieldset>
 
@@ -215,7 +116,11 @@
 
 
     <footer>
-        <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Whisker and Vi. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
