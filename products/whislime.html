@@ -7,21 +7,20 @@
 
     <title>Vi's Whislime | Whisker and Vi</title>
 
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         HEADER AND NAVIGATION
-         ========================================= -->
+    <header class="site-header">
 
-    <header>
+        <div class="header-brand">
 
-        <h1>Whisker and Vi</h1>
+            <h1>Whisker and Vi</h1>
 
-        <p>Happy Cats, Happy Hearts. 🐾</p>
+            <p>Happy Cats, Happy Hearts. 🐾</p>
+
+        </div>
 
         <nav>
             <ul>
@@ -34,15 +33,7 @@
     </header>
 
 
-    <!-- =========================================
-         MAIN CONTENT
-         ========================================= -->
-
     <main>
-
-        <!-- =========================================
-             PRODUCT INFORMATION
-             ========================================= -->
 
         <section class="product-container">
 
@@ -50,193 +41,42 @@
 
             <img
                 src="../whislime.jpg"
-                alt="Vi's Whislime wet cat food"
+                alt="A can of Vi's Whislime wet cat food"
                 class="product-image"
             >
 
-            <div class="product-description">
-
-                <p>
-                    Vi's Whislime is a tasty and satisfying wet cat food
-                    created to give your feline friend a delicious and
-                    enjoyable mealtime experience.
-                </p>
-
-                <p>
-                    Soft, flavorful, and purr-fect for cats who love a
-                    delicious wet meal! 🐱💚
-                </p>
-
-            </div>
+            <p class="product-description">
+                Delicious wet cat food with a soft texture that
+                makes mealtime extra enjoyable for cats.
+            </p>
 
         </section>
 
 
-        <!-- =========================================
-             ORDER ENQUIRY FORM
-             ========================================= -->
-
         <section class="order-form">
 
-            <h2>Order Enquiry Form</h2>
+            <h2>Order Vi's Whislime</h2>
 
-            <p>
-                Interested in ordering Vi's Whislime?
-                Fill out the form below and we'll get back to you!
-            </p>
+            <p>Fill out the form below to place your order.</p>
 
             <form>
 
-                <!-- Quantity -->
-
                 <div class="form-group">
-
-                    <label for="whislime-quantity">
-                        Quantity:
-                    </label>
-
-                    <input
-                        type="number"
-                        id="whislime-quantity"
-                        name="quantity"
-                        min="1"
-                        max="20"
-                    >
-
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-
-                <!-- Delivery Method -->
-
-                <fieldset>
-
-                    <legend>
-                        How would you like your order delivered?
-                    </legend>
-
-                    <input
-                        type="radio"
-                        id="whislime-standard"
-                        name="delivery-method"
-                        value="standard"
-                    >
-
-                    <label
-                        for="whislime-standard"
-                        class="choice-label"
-                    >
-                        Standard Delivery
-                    </label>
-
-
-                    <input
-                        type="radio"
-                        id="whislime-express"
-                        name="delivery-method"
-                        value="express"
-                    >
-
-                    <label
-                        for="whislime-express"
-                        class="choice-label"
-                    >
-                        Express Delivery
-                    </label>
-
-
-                    <input
-                        type="radio"
-                        id="whislime-pickup"
-                        name="delivery-method"
-                        value="pickup"
-                    >
-
-                    <label
-                        for="whislime-pickup"
-                        class="choice-label"
-                    >
-                        Store Pickup
-                    </label>
-
-                </fieldset>
-
-
-                <!-- Optional Extras -->
-
                 <div class="form-group">
-
-                    <p><strong>Optional Extras:</strong></p>
-
-                    <input
-                        type="checkbox"
-                        id="whislime-gift"
-                        name="extras"
-                        value="gift-wrapping"
-                    >
-
-                    <label
-                        for="whislime-gift"
-                        class="choice-label"
-                    >
-                        Gift Wrapping
-                    </label>
-
-
-                    <input
-                        type="checkbox"
-                        id="whislime-handling"
-                        name="extras"
-                        value="express-handling"
-                    >
-
-                    <label
-                        for="whislime-handling"
-                        class="choice-label"
-                    >
-                        Express Handling
-                    </label>
-
-
-                    <input
-                        type="checkbox"
-                        id="whislime-note"
-                        name="extras"
-                        value="special-note"
-                    >
-
-                    <label
-                        for="whislime-note"
-                        class="choice-label"
-                    >
-                        Include a Special Note
-                    </label>
-
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
-
-                <!-- Contact Email -->
-
                 <div class="form-group">
-
-                    <label for="whislime-email">
-                        Contact Email:
-                    </label>
-
-                    <input
-                        type="email"
-                        id="whislime-email"
-                        name="email"
-                        required
-                    >
-
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
                 </div>
 
-
-                <!-- Submit Button -->
-
-                <button type="submit">
-                    Send Order Enquiry
-                </button>
+                <button type="submit">Place Order</button>
 
             </form>
 
@@ -245,18 +85,11 @@
     </main>
 
 
-    <!-- =========================================
-         FOOTER
-         ========================================= -->
-
     <footer>
-
-        <p>
-            &copy; 2026 Whisker and Vi. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
     </footer>
 
 </body>
 
 </html>
+```

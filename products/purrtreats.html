@@ -7,21 +7,20 @@
 
     <title>Vi's PurrTreats | Whisker and Vi</title>
 
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         HEADER AND NAVIGATION
-         ========================================= -->
+    <header class="site-header">
 
-    <header>
+        <div class="header-brand">
 
-        <h1>Whisker and Vi</h1>
+            <h1>Whisker and Vi</h1>
 
-        <p>Happy Cats, Happy Hearts. 🐾</p>
+            <p>Happy Cats, Happy Hearts. 🐾</p>
+
+        </div>
 
         <nav>
             <ul>
@@ -34,15 +33,7 @@
     </header>
 
 
-    <!-- =========================================
-         MAIN CONTENT
-         ========================================= -->
-
     <main>
-
-        <!-- =========================================
-             PRODUCT INFORMATION
-             ========================================= -->
 
         <section class="product-container">
 
@@ -50,193 +41,42 @@
 
             <img
                 src="../purrtreats.jpg"
-                alt="Vi's PurrTreats cat treats"
+                alt="A package of Vi's PurrTreats cat treats"
                 class="product-image"
             >
 
-            <div class="product-description">
-
-                <p>
-                    Vi's PurrTreats are delicious treats made especially for
-                    your feline friends. Perfect as a reward, snack, or simply
-                    a little way to show your cat some extra love!
-                </p>
-
-                <p>
-                    Tasty, fun, and made for happy purrs—because every good
-                    kitty deserves a treat! 🐱🐾
-                </p>
-
-            </div>
+            <p class="product-description">
+                Tasty cat treats made for rewarding your furry
+                companion during playtime and training.
+            </p>
 
         </section>
 
 
-        <!-- =========================================
-             ORDER ENQUIRY FORM
-             ========================================= -->
-
         <section class="order-form">
 
-            <h2>Order Enquiry Form</h2>
+            <h2>Order Vi's PurrTreats</h2>
 
-            <p>
-                Interested in ordering Vi's PurrTreats?
-                Fill out the form below and we'll get back to you!
-            </p>
+            <p>Fill out the form below to place your order.</p>
 
             <form>
 
-                <!-- Quantity -->
-
                 <div class="form-group">
-
-                    <label for="purrtreats-quantity">
-                        Quantity:
-                    </label>
-
-                    <input
-                        type="number"
-                        id="purrtreats-quantity"
-                        name="quantity"
-                        min="1"
-                        max="20"
-                    >
-
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-
-                <!-- Delivery Method -->
-
-                <fieldset>
-
-                    <legend>
-                        How would you like your order delivered?
-                    </legend>
-
-                    <input
-                        type="radio"
-                        id="purrtreats-standard"
-                        name="delivery-method"
-                        value="standard"
-                    >
-
-                    <label
-                        for="purrtreats-standard"
-                        class="choice-label"
-                    >
-                        Standard Delivery
-                    </label>
-
-
-                    <input
-                        type="radio"
-                        id="purrtreats-express"
-                        name="delivery-method"
-                        value="express"
-                    >
-
-                    <label
-                        for="purrtreats-express"
-                        class="choice-label"
-                    >
-                        Express Delivery
-                    </label>
-
-
-                    <input
-                        type="radio"
-                        id="purrtreats-pickup"
-                        name="delivery-method"
-                        value="pickup"
-                    >
-
-                    <label
-                        for="purrtreats-pickup"
-                        class="choice-label"
-                    >
-                        Store Pickup
-                    </label>
-
-                </fieldset>
-
-
-                <!-- Optional Extras -->
-
                 <div class="form-group">
-
-                    <p><strong>Optional Extras:</strong></p>
-
-                    <input
-                        type="checkbox"
-                        id="purrtreats-gift"
-                        name="extras"
-                        value="gift-wrapping"
-                    >
-
-                    <label
-                        for="purrtreats-gift"
-                        class="choice-label"
-                    >
-                        Gift Wrapping
-                    </label>
-
-
-                    <input
-                        type="checkbox"
-                        id="purrtreats-handling"
-                        name="extras"
-                        value="express-handling"
-                    >
-
-                    <label
-                        for="purrtreats-handling"
-                        class="choice-label"
-                    >
-                        Express Handling
-                    </label>
-
-
-                    <input
-                        type="checkbox"
-                        id="purrtreats-note"
-                        name="extras"
-                        value="special-note"
-                    >
-
-                    <label
-                        for="purrtreats-note"
-                        class="choice-label"
-                    >
-                        Include a Special Note
-                    </label>
-
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
-
-                <!-- Contact Email -->
-
                 <div class="form-group">
-
-                    <label for="purrtreats-email">
-                        Contact Email:
-                    </label>
-
-                    <input
-                        type="email"
-                        id="purrtreats-email"
-                        name="email"
-                        required
-                    >
-
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
                 </div>
 
-
-                <!-- Submit Button -->
-
-                <button type="submit">
-                    Send Order Enquiry
-                </button>
+                <button type="submit">Place Order</button>
 
             </form>
 
@@ -245,18 +85,11 @@
     </main>
 
 
-    <!-- =========================================
-         FOOTER
-         ========================================= -->
-
     <footer>
-
-        <p>
-            &copy; 2026 Whisker and Vi. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Whisker and Vi. All rights reserved.</p>
     </footer>
 
 </body>
 
 </html>
+```
