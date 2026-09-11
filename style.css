@@ -35,7 +35,7 @@ img {
 
 
 /* ========================================
-   HEADER AND NAVIGATION
+   HEADER
    ======================================== */
 
 .site-header {
@@ -50,7 +50,7 @@ img {
 }
 
 
-/* SHOP NAME AND TAGLINE */
+/* SHOP NAME */
 
 .header-brand {
     text-align: left;
@@ -69,7 +69,9 @@ img {
 }
 
 
-/* NAVIGATION */
+/* ========================================
+   NAVIGATION
+   ======================================== */
 
 .site-header nav ul {
     display: flex;
@@ -93,7 +95,7 @@ img {
 
 
 /* ========================================
-   MAIN LAYOUT
+   MAIN
    ======================================== */
 
 main {
@@ -112,12 +114,12 @@ main {
 .home-page main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 35px 20px 60px;
+    padding: 35px 30px 60px;
 }
 
 
 /* ========================================
-   INTRO / HERO SECTION
+   HERO / INTRO
    ======================================== */
 
 .hero-banner {
@@ -147,7 +149,7 @@ main {
 
 
 /* ========================================
-   SECTION HEADINGS
+   PRODUCT SECTION
    ======================================== */
 
 .home-page h2 {
@@ -173,7 +175,7 @@ main {
 
 
 /* ========================================
-   PRODUCT CARDS
+   PRODUCT CARD
    ======================================== */
 
 .product-card {
@@ -182,7 +184,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    padding: 20px;
+    padding: 25px;
 
     background-color: var(--white);
 
@@ -206,7 +208,9 @@ main {
 }
 
 
-/* PRODUCT PRICE */
+/* ========================================
+   PRODUCT PRICE
+   ======================================== */
 
 .product-price {
     font-size: 1.3rem;
@@ -215,7 +219,9 @@ main {
 }
 
 
-/* PRODUCT IMAGE */
+/* ========================================
+   PRODUCT IMAGE
+   ======================================== */
 
 .product-card img {
     width: 100%;
@@ -229,7 +235,9 @@ main {
 }
 
 
-/* PRODUCT LINKS */
+/* ========================================
+   PRODUCT LINK
+   ======================================== */
 
 .product-card a {
     color: var(--dark-ink);
@@ -503,13 +511,15 @@ footer {
 
 
 /* ========================================
-   MOBILE RESPONSIVE LAYOUT
-   SAME STYLE AS CAVITESCAPES
+   MOBILE RESPONSIVE
+   SAME SPACING STYLE AS CAVITESCAPES
    ======================================== */
 
 @media (max-width: 600px) {
 
-    /* HEADER */
+    /* -----------------------------
+       HEADER
+       ----------------------------- */
 
     .site-header {
         flex-direction: column;
@@ -557,22 +567,33 @@ footer {
     }
 
 
-    /* HOME PAGE */
+    /* -----------------------------
+       HOME PAGE
+       ----------------------------- */
 
     .home-page main {
-        padding: 25px 15px 50px;
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        padding: 30px 25px 50px;
     }
 
 
-    /* HERO */
+    /* -----------------------------
+       HERO
+       ----------------------------- */
 
     .hero-banner {
+        width: 100%;
+
         min-height: 160px;
 
-        margin: 25px auto 45px;
-        padding: 20px;
+        margin: 25px auto 50px;
+        padding: 25px 20px;
 
-        border-radius: 20px;
+        border-radius: 22px;
     }
 
     .hero-banner p {
@@ -580,38 +601,76 @@ footer {
     }
 
 
-    /* SECTION HEADINGS */
+    /* -----------------------------
+       PRODUCT HEADING
+       ----------------------------- */
 
     .home-page h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+
         font-size: 1.8rem;
+        text-align: center;
     }
 
 
-    /* PRODUCT GRID */
+    /* -----------------------------
+       PRODUCT GRID
+       ----------------------------- */
 
     .product-grid {
-        gap: 20px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
     }
 
 
-    /* PRODUCT CARDS */
+    /* -----------------------------
+       PRODUCT CARD
+       ----------------------------- */
 
     .product-card {
-        flex: 1 1 100%;
+        width: 100%;
 
-        padding: 20px 15px;
+        flex: none;
+
+        padding: 25px 20px;
+
+        border-radius: 20px;
     }
+
+    .product-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+
+
+    /* -----------------------------
+       PRODUCT IMAGE
+       ----------------------------- */
 
     .product-card img {
+        width: 100%;
         max-width: 280px;
         height: 220px;
+
+        margin: 20px auto;
     }
 
 
-    /* ABOUT PAGE */
+    /* -----------------------------
+       ABOUT PAGE
+       ----------------------------- */
 
     .about-page main {
-        padding: 25px 15px 50px;
+        width: 100%;
+        padding: 30px 25px 50px;
     }
 
     .about-page img {
@@ -621,11 +680,14 @@ footer {
     }
 
 
-    /* CONTACT PAGE */
+    /* -----------------------------
+       CONTACT PAGE
+       ----------------------------- */
 
     .contact-page main {
+        width: 100%;
+        padding: 25px 20px;
         margin: 25px auto;
-        padding: 15px;
     }
 
     .contact-page fieldset {
@@ -633,14 +695,18 @@ footer {
     }
 
 
-    /* PRODUCT DETAIL PAGE */
+    /* -----------------------------
+       PRODUCT DETAIL
+       ----------------------------- */
 
     .product-page {
-        padding: 25px 15px 50px;
+        width: 100%;
+        padding: 30px 20px 50px;
     }
 
     .product-container {
-        padding: 20px 15px;
+        width: 100%;
+        padding: 25px 20px;
     }
 
     .product-image {
@@ -649,9 +715,12 @@ footer {
     }
 
 
-    /* ORDER FORM */
+    /* -----------------------------
+       ORDER FORM
+       ----------------------------- */
 
     .order-form {
+        width: 100%;
         padding: 20px 15px;
     }
 
