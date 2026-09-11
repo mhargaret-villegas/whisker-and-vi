@@ -1,6 +1,6 @@
-/* =========================================
-   1. VARIABLES
-   ========================================= */
+/* ========================================
+   VARIABLES
+   ======================================== */
 
 :root {
     --brand-color: #3d3028;
@@ -12,9 +12,9 @@
 }
 
 
-/* =========================================
-   2. BASE STYLES
-   ========================================= */
+/* ========================================
+   BASE STYLES
+   ======================================== */
 
 * {
     box-sizing: border-box;
@@ -33,26 +33,24 @@ img {
     height: auto;
 }
 
-a {
-    text-decoration: none;
-}
 
-
-/* =========================================
-   3. HEADER AND NAVIGATION
-   ========================================= */
+/* ========================================
+   HEADER AND NAVIGATION
+   ======================================== */
 
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 35px 20px;
-    border-bottom: 1px solid var(--soft-border);
+
+    padding: 25px 35px;
+
     background-color: var(--light-background);
+    border-bottom: 1px solid var(--soft-border);
 }
 
 
-/* SHOP NAME + TAGLINE */
+/* SHOP NAME AND TAGLINE */
 
 .header-brand {
     text-align: left;
@@ -67,6 +65,7 @@ a {
 .header-brand p {
     margin: 5px 0 0;
     color: var(--muted-grey);
+    font-size: 1.05rem;
 }
 
 
@@ -75,6 +74,7 @@ a {
 .site-header nav ul {
     display: flex;
     gap: 20px;
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -82,88 +82,99 @@ a {
 
 .site-header nav a {
     color: var(--dark-ink);
+    text-decoration: none;
     font-weight: bold;
-    padding: 8px 4px;
+    font-size: 1.1rem;
 }
 
 .site-header nav a:hover {
-    text-decoration: underline;
+    color: #75685f;
 }
 
 
-/* =========================================
-   4. MAIN
-   ========================================= */
+/* ========================================
+   MAIN LAYOUT
+   ======================================== */
 
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 35px 20px 60px;
+    width: 100%;
+}
+
+
+/* ========================================
+   HOME PAGE
+   ======================================== */
+
+.home-page {
     text-align: center;
 }
 
-main > p {
-    margin: 0 auto 35px;
-    color: var(--muted-grey);
-    font-size: 1.05rem;
-}
-
-main h2 {
-    margin: 0 0 28px;
-    color: var(--dark-ink);
+.home-page main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 20px 60px;
 }
 
 
-/* =========================================
-   5. FLEXBOX CENTERED HERO
-   ========================================= */
+/* ========================================
+   INTRO / HERO SECTION
+   ======================================== */
 
 .hero-banner {
     min-height: 180px;
-    margin: 0 auto 40px;
-    padding: 25px 35px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    margin: 30px auto 55px;
+    padding: 30px;
+
     background-color: var(--white);
     border: 1px solid var(--soft-border);
-    border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(61, 48, 40, 0.08);
+    border-radius: 25px;
 
-    color: var(--muted-grey);
     text-align: center;
 }
 
 .hero-banner p {
-    max-width: 650px;
+    max-width: 800px;
     margin: 0;
-    font-size: 1.08rem;
+
+    font-size: 1.3rem;
+    color: var(--muted-grey);
 }
 
 
-/* =========================================
-   6. PRODUCT GRID
-   ========================================= */
+/* ========================================
+   SECTION HEADINGS
+   ======================================== */
 
-/*
-   Flexbox makes the product cards responsive.
-   Cards wrap automatically when there is not
-   enough horizontal space.
-*/
+.home-page h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+    color: var(--dark-ink);
+}
+
+
+/* ========================================
+   PRODUCT GRID
+   ======================================== */
 
 .product-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+
     align-items: stretch;
 }
 
 
-/* =========================================
-   7. PRODUCT CARDS
-   ========================================= */
+/* ========================================
+   PRODUCT CARDS
+   ======================================== */
 
 .product-card {
     flex: 1 1 240px;
@@ -171,285 +182,477 @@ main h2 {
     display: flex;
     flex-direction: column;
 
-    padding: 22px 20px;
+    padding: 20px;
 
     background-color: var(--white);
-    border-radius: 18px;
-    border-left: 5px solid var(--brand-color);
-    box-shadow: 0 5px 15px rgba(61, 48, 40, 0.10);
+
+    border-radius: 20px;
+    border-left: 6px solid var(--brand-color);
 
     text-align: center;
 }
 
 .product-card h3 {
-    margin: 0 0 12px;
-    font-size: 1.25rem;
-    color: var(--brand-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+    color: var(--dark-ink);
 }
 
 .product-card p {
-    margin: 8px 0;
+    margin: 10px 0;
     color: var(--muted-grey);
+}
+
+
+/* PRODUCT PRICE */
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--dark-ink);
 }
 
 
 /* PRODUCT IMAGE */
 
 .product-card img {
-    width: 185px;
-    height: 185px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+
+    object-fit: contain;
+
     display: block;
     margin: 20px auto;
-    border-radius: 10px;
 }
 
 
-/* =========================================
-   8. PRODUCT BUTTON
-   ========================================= */
+/* PRODUCT LINKS */
 
-.view-details {
-    display: inline-block;
-    align-self: center;
-
-    margin-top: auto;
-    padding: 10px 16px;
-
-    background-color: var(--brand-color);
-    color: var(--white);
-
-    border-radius: 7px;
+.product-card a {
+    color: var(--dark-ink);
     font-weight: bold;
+    text-decoration: none;
 }
 
-.view-details:hover {
-    background-color: var(--muted-grey);
+.product-card a:hover {
+    text-decoration: underline;
 }
 
 
-/* =========================================
-   9. PRODUCT DETAIL PAGES
-   ========================================= */
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
 
-.product-container {
-    max-width: 650px;
-    margin: 0 auto 35px;
+.about-page {
     text-align: center;
 }
 
-.product-container h2 {
-    color: var(--dark-ink);
-}
-
-.product-image {
-    width: 185px;
-    height: 185px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-.product-description {
-    max-width: 600px;
+.about-page main {
+    max-width: 900px;
     margin: 0 auto;
+    padding: 35px 30px 60px;
+}
+
+.about-page h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-page h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    max-width: 700px;
+    margin: 15px auto;
+
+    line-height: 1.6;
     color: var(--muted-grey);
 }
 
+.about-page img {
+    width: 400px;
+    height: 300px;
 
-/* =========================================
-   10. ORDER FORM
-   ========================================= */
+    object-fit: contain;
 
-.order-form {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 25px;
+    display: block;
+    margin: 25px auto;
 
-    background-color: var(--white);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(61, 48, 40, 0.08);
+}
+
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+
+.contact-page {
+    text-align: center;
+}
+
+.contact-page main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
 
     text-align: left;
 }
 
-.order-form h2,
-.order-form > p {
+.contact-page main > h1,
+.contact-page main > h2,
+.contact-page main > p {
     text-align: center;
 }
 
-.order-form h2 {
+.contact-page fieldset {
+    padding: 25px;
+
+    border: 1px solid var(--soft-border);
+    border-radius: 15px;
+
+    background-color: var(--white);
+}
+
+.contact-page legend {
+    padding: 0 10px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
     color: var(--dark-ink);
 }
 
-.order-form > p {
-    color: var(--muted-grey);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
+.contact-page label {
     display: block;
-    margin: 10px 0 5px;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
     font-weight: bold;
 }
 
-.choice-label {
-    display: inline;
-    font-weight: normal;
-    margin-left: 5px;
-    margin-right: 12px;
-}
-
-
-/* =========================================
-   11. FIELDSET AND LEGEND
-   ========================================= */
-
-fieldset {
-    margin-bottom: 20px;
-    padding: 20px;
-
-    border: 1px solid var(--soft-border);
-    border-radius: 12px;
-}
-
-legend {
-    padding: 0 8px;
-    color: var(--brand-color);
-    font-weight: bold;
-}
-
-
-/* =========================================
-   12. FORM INPUTS
-   ========================================= */
-
-input,
-textarea,
-select {
+.contact-page input,
+.contact-page select,
+.contact-page textarea {
     width: 100%;
-    padding: 12px;
+
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 
     border: 1px solid var(--soft-border);
     border-radius: 6px;
-
-    font-family: inherit;
-    font-size: 1rem;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
+.contact-page textarea {
+    min-height: 150px;
+    resize: vertical;
 }
 
+.contact-page button {
+    margin-top: 20px;
+    padding: 12px 25px;
 
-/* KEYBOARD FOCUS STATE */
+    font-size: 16px;
+    font-weight: bold;
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 3px solid var(--brand-color);
+    color: var(--white);
+    background-color: var(--brand-color);
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.contact-page button:hover {
+    opacity: 0.9;
+}
+
+.contact-page input:focus,
+.contact-page select:focus,
+.contact-page textarea:focus {
+    outline: 3px solid #d8cfc8;
     outline-offset: 2px;
 }
 
-textarea {
+
+/* ========================================
+   PRODUCT DETAIL PAGES
+   ======================================== */
+
+.product-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+
+    text-align: center;
+}
+
+.product-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--soft-border);
+    border-radius: 20px;
+}
+
+.product-container h1 {
+    margin-top: 0;
+}
+
+.product-container p {
+    color: var(--muted-grey);
+}
+
+.product-image {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 25px auto;
+
+    border-radius: 15px;
+}
+
+
+/* ========================================
+   ORDER FORM
+   ======================================== */
+
+.order-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 25px;
+
+    background-color: var(--light-background);
+
+    border: 1px solid var(--soft-border);
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.order-form h2 {
+    text-align: center;
+}
+
+.order-form label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    border: 1px solid var(--soft-border);
+    border-radius: 6px;
+}
+
+.order-form textarea {
     min-height: 120px;
     resize: vertical;
 }
 
+.order-form button {
+    margin-top: 20px;
+    padding: 12px 25px;
 
-/* =========================================
-   13. BUTTONS
-   ========================================= */
-
-button {
-    display: block;
-    margin: 20px auto 0;
-    padding: 12px 20px;
+    color: var(--white);
+    background-color: var(--brand-color);
 
     border: none;
-    border-radius: 7px;
-
-    background-color: var(--brand-color);
-    color: var(--white);
+    border-radius: 6px;
 
     font-weight: bold;
+
     cursor: pointer;
 }
 
-button:hover {
-    background-color: var(--muted-grey);
-}
 
+/* ========================================
+   FOOTER
+   ======================================== */
 
-/* =========================================
-   14. ABOUT PAGE
-   ========================================= */
+footer {
+    padding: 30px 20px;
 
-.about-section {
-    max-width: 700px;
-    margin: 0 auto 40px;
     text-align: center;
-}
-
-.about-section h3 {
-    color: var(--dark-ink);
-}
-
-.about-text {
-    max-width: 650px;
-    margin: 0 auto 20px;
     color: var(--muted-grey);
 }
 
-.owner-image {
-    width: 185px;
-    height: 185px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
 
-
-/* =========================================
-   15. RESPONSIVE HEADER ONLY
-   ========================================= */
+/* ========================================
+   MOBILE RESPONSIVE LAYOUT
+   SAME STYLE AS CAVITESCAPES
+   ======================================== */
 
 @media (max-width: 600px) {
 
+    /* HEADER */
+
     .site-header {
-        padding: 20px 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px 15px;
+
+        text-align: center;
+    }
+
+
+    /* SHOP NAME */
+
+    .header-brand {
+        width: 100%;
+        text-align: center;
     }
 
     .header-brand h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
     .header-brand p {
-        font-size: 0.85rem;
+        margin-top: 8px;
+        font-size: 0.95rem;
+    }
+
+
+    /* NAVIGATION BELOW SHOP NAME */
+
+    .site-header nav {
+        width: 100%;
+        margin-top: 15px;
     }
 
     .site-header nav ul {
-        gap: 10px;
+        justify-content: center;
+        gap: 18px;
     }
 
     .site-header nav a {
-        font-size: 0.9rem;
-        padding: 5px 2px;
+        font-size: 1rem;
     }
 
-    main {
-        padding-left: 10px;
-        padding-right: 10px;
+
+    /* HOME PAGE */
+
+    .home-page main {
+        padding: 25px 15px 50px;
     }
+
+
+    /* HERO */
 
     .hero-banner {
         min-height: 160px;
+
+        margin: 25px auto 45px;
         padding: 20px;
+
+        border-radius: 20px;
     }
+
+    .hero-banner p {
+        font-size: 1.05rem;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .home-page h2 {
+        font-size: 1.8rem;
+    }
+
+
+    /* PRODUCT GRID */
+
+    .product-grid {
+        gap: 20px;
+    }
+
+
+    /* PRODUCT CARDS */
+
+    .product-card {
+        flex: 1 1 100%;
+
+        padding: 20px 15px;
+    }
+
+    .product-card img {
+        max-width: 280px;
+        height: 220px;
+    }
+
+
+    /* ABOUT PAGE */
+
+    .about-page main {
+        padding: 25px 15px 50px;
+    }
+
+    .about-page img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .contact-page main {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .contact-page fieldset {
+        padding: 20px 15px;
+    }
+
+
+    /* PRODUCT DETAIL PAGE */
+
+    .product-page {
+        padding: 25px 15px 50px;
+    }
+
+    .product-container {
+        padding: 20px 15px;
+    }
+
+    .product-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* ORDER FORM */
+
+    .order-form {
+        padding: 20px 15px;
+    }
+
 }
