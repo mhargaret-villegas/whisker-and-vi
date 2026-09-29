@@ -10,155 +10,184 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body>
 
-    <div class="page">
+<div class="page">
 
-        <header class="site-header">
 
-            <div class="header-brand">
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-brand">
+
+            <div class="brand-title">
+
+                <img
+                    src="../wvlogo.jpg"
+                    alt="Whisker and Vi logo"
+                    class="site-logo"
+                >
 
                 <h1>Whisker and Vi</h1>
 
-                <p>Happy Cats, Happy Hearts. 🐾</p>
-
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <p>Happy Cats, Happy Hearts. 🐾</p>
 
-        </header>
+        </div>
 
 
-        <aside>
-
-            <h2>Shop Info 🐾</h2>
-
-            <p>
-                Everything your cat needs for a happy,
-                healthy, and comfortable life.
-            </p>
-
-            <h3>Categories</h3>
+        <nav>
 
             <ul>
-                <li>Dry Cat Food</li>
-                <li>Wet Cat Food</li>
-                <li>Cat Treats</li>
-                <li>Grooming &amp; Hygiene</li>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+
             </ul>
 
-            <h3>Why Shop With Us?</h3>
+        </nav>
 
-            <p>
-                Cat-inspired products selected with
-                love for every whiskered friend.
-            </p>
-
-            <h3>Delivery Information 🚚</h3 >
-            <p>We deliver cat essentials straight to your doorstep.</p>
-            <p>Orders are carefully packed to keep your cat's goodies safe and fresh.</p>   
-
-        </aside>
+    </header>
 
 
-        <main class="product-page">
 
-            <section class="product-container">
+    <!-- PRODUCT -->
+    <main class="product-page">
 
-                <h2>Vi's WhisCare</h2>
-
-                <img
-                    src="../whiscare.jpg"
-                    alt="Vi's WhisCare cat grooming and hygiene products"
-                    class="product-image"
-                >
-
-                <p class="product-description">
-                    Cat grooming and hygiene essentials designed to help
-                    keep your furry companion clean and comfortable.
-                </p>
-
-            </section>
+        <h2>Vi's WhisCare 🐾</h2>
 
 
-            <section class="order-form">
-
-                <h2>Order Vi's WhisCare</h2>
-
-                <p>Fill out the form below to place your order.</p>
-
-                <form>
-
-                    <div class="form-group">
-
-                        <label for="name">Name:</label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                        >
-
-                    </div>
+        <img
+            src="../whiscare.jpg"
+            alt="Vi's WhisCare grooming and hygiene products"
+        >
 
 
-                    <div class="form-group">
-
-                        <label for="email">Email:</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-
-                    </div>
+        <p>
+            Vi's WhisCare provides grooming and hygiene essentials designed
+            to help keep your cat clean, fresh, and comfortable.
+        </p>
 
 
-                    <div class="form-group">
-
-                        <label for="quantity">Quantity:</label>
-
-                        <input
-                            type="number"
-                            id="quantity"
-                            name="quantity"
-                            min="1"
-                            required
-                        >
-
-                    </div>
+        <p>
+            Make grooming time a little easier while giving your furry friend
+            the care they deserve.
+        </p>
 
 
-                    <button type="submit">
-                        Place Order
-                    </button>
+        <form action="#" method="post">
 
-                </form>
-
-            </section>
-
-        </main>
+            <h3>Order WhisCare</h3>
 
 
-        <footer>
+            <label for="name">
+                Name:
+            </label>
 
-            <p>
-                &copy; 2026 Whisker and Vi. All rights reserved.
-            </p>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
 
-        </footer>
 
-    </div>
+            <label for="quantity">
+                Quantity:
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                required
+            >
+
+
+            <label for="notes">
+                Order Notes:
+            </label>
+
+            <textarea
+                id="notes"
+                name="notes"
+            ></textarea>
+
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </main>
+
+
+
+    <!-- SIDEBAR -->
+    <aside>
+
+        <h2>Shop Info 🐾</h2>
+
+        <p>
+            Everything your cat needs for a happy, healthy, and comfortable life.
+        </p>
+
+
+        <h3>Categories</h3>
+
+        <ul>
+
+            <li>Dry Cat Food</li>
+
+            <li>Wet Cat Food</li>
+
+            <li>Cat Treats</li>
+
+            <li>Grooming &amp; Hygiene</li>
+
+        </ul>
+
+
+        <h3>Why Shop With Us?</h3>
+
+        <p>
+            Cat-inspired products selected with love for every whiskered friend.
+        </p>
+
+
+        <h3>Delivery Information 🚚</h3>
+
+        <p>
+            Fast and convenient delivery for your cat's favorite essentials.
+        </p>
+
+    </aside>
+
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Whisker and Vi. Happy Cats, Happy Hearts. 🐾
+        </p>
+
+    </footer>
+
+
+</div>
 
 </body>
-
 </html>

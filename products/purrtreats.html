@@ -10,152 +10,184 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body>
 
-    <div class="page">
+<div class="page">
 
-        <header class="site-header">
 
-            <div class="header-brand">
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-brand">
+
+            <div class="brand-title">
+
+                <img
+                    src="../wvlogo.jpg"
+                    alt="Whisker and Vi logo"
+                    class="site-logo"
+                >
 
                 <h1>Whisker and Vi</h1>
 
-                <p>Happy Cats, Happy Hearts. 🐾</p>
-
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <p>Happy Cats, Happy Hearts. 🐾</p>
 
-        </header>
+        </div>
 
 
-        <aside>
-
-            <h2>Shop Info 🐾</h2>
-
-            <p>
-                Everything your cat needs for a happy,
-                healthy, and comfortable life.
-            </p>
-
-            <h3>Categories</h3>
+        <nav>
 
             <ul>
-                <li>Dry Cat Food</li>
-                <li>Wet Cat Food</li>
-                <li>Cat Treats</li>
-                <li>Grooming &amp; Hygiene</li>
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+
             </ul>
 
-            <h3>Why Shop With Us?</h3>
+        </nav>
 
-            <p>
-                Cat-inspired products selected with
-                love for every whiskered friend.
-            </p>
-
-            <h3>Delivery Information 🚚</h3 >
-            <p>We deliver cat essentials straight to your doorstep.</p>
-            <p>Orders are carefully packed to keep your cat's goodies safe and fresh.</p>       
-
-        </aside>
+    </header>
 
 
-        <main class="product-page">
 
-            <section class="product-container">
+    <!-- PRODUCT -->
+    <main class="product-page">
 
-                <h2>Vi's PurrTreats</h2>
-
-                <img
-                    src="../purrtreats.jpg"
-                    alt="A package of Vi's PurrTreats cat treats"
-                    class="product-image"
-                >
-
-                <p class="product-description">
-                    Tasty cat treats made for rewarding your furry
-                    companion during playtime and training.
-                </p>
-
-            </section>
+        <h2>Vi's PurrTreats 🐾</h2>
 
 
-            <section class="order-form">
-
-                <h2>Order Vi's PurrTreats</h2>
-
-                <p>Fill out the form below to place your order.</p>
-
-                <form>
-
-                    <div class="form-group">
-
-                        <label for="name">Name:</label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="email">Email:</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="quantity">Quantity:</label>
-
-                        <input
-                            type="number"
-                            id="quantity"
-                            name="quantity"
-                            min="1"
-                            required
-                        >
-
-                    </div>
-
-                    <button type="submit">
-                        Place Order
-                    </button>
-
-                </form>
-
-            </section>
-
-        </main>
+        <img
+            src="../purrtreats.jpg"
+            alt="Vi's PurrTreats cat treats"
+        >
 
 
-        <footer>
+        <p>
+            Vi's PurrTreats are tasty little rewards made for those special
+            moments with your furry friend.
+        </p>
 
-            <p>
-                &copy; 2026 Whisker and Vi. All rights reserved.
-            </p>
 
-        </footer>
+        <p>
+            Give your cat a delicious treat after playtime, during training,
+            or simply because they deserve some extra love.
+        </p>
 
-    </div>
+
+        <form action="#" method="post">
+
+            <h3>Order PurrTreats</h3>
+
+
+            <label for="name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
+
+
+            <label for="quantity">
+                Quantity:
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                required
+            >
+
+
+            <label for="notes">
+                Order Notes:
+            </label>
+
+            <textarea
+                id="notes"
+                name="notes"
+            ></textarea>
+
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </main>
+
+
+
+    <!-- SIDEBAR -->
+    <aside>
+
+        <h2>Shop Info 🐾</h2>
+
+        <p>
+            Everything your cat needs for a happy, healthy, and comfortable life.
+        </p>
+
+
+        <h3>Categories</h3>
+
+        <ul>
+
+            <li>Dry Cat Food</li>
+
+            <li>Wet Cat Food</li>
+
+            <li>Cat Treats</li>
+
+            <li>Grooming &amp; Hygiene</li>
+
+        </ul>
+
+
+        <h3>Why Shop With Us?</h3>
+
+        <p>
+            Cat-inspired products selected with love for every whiskered friend.
+        </p>
+
+
+        <h3>Delivery Information 🚚</h3>
+
+        <p>
+            Fast and convenient delivery for your cat's favorite essentials.
+        </p>
+
+    </aside>
+
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Whisker and Vi. Happy Cats, Happy Hearts. 🐾
+        </p>
+
+    </footer>
+
+
+</div>
 
 </body>
-
 </html>
